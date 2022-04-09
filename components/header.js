@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import HeaderItem from "./headerItem";
-import { LightningBoltIcon, HomeIcon,BadgeCheckIcon,CollectionIcon,SearchIcon,UserIcon } from "@heroicons/react/solid";
+import { LightningBoltIcon, HomeIcon,BadgeCheckIcon,CollectionIcon,SearchIcon,UserIcon } from "@heroicons/react/outline";
 const menus = [
   {
     title: "HOME",
@@ -27,7 +27,7 @@ const menus = [
 ];
 export default function Header() {
   return (
-    <header className="flex flex-col sm:flex-row m-5 justify-between items-center h-auto">
+    <header className="flex flex-col sm:flex-row p-5 justify-between items-center h-auto">
       <div className=" flex flex-grow justify-evenly max-w-2xl">
         {menus.map((e) => (
           <HeaderItem title={e.title} Icon={e.Icon} key={e.title}/>
